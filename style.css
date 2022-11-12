@@ -24,10 +24,11 @@ body {
   background: linear-gradient(270deg, #0f0a46, #16005e, #010a15);
   background-size: 800% 800%;
 
+/* 백그라운 그라데이션 애니메이션
   -webkit-animation: AnimationName 8s ease infinite;
   -moz-animation: AnimationName 8s ease infinite;
   animation: AnimationName 8s ease infinite;
-
+*/
 }
 
 @-webkit-keyframes AnimationName {
@@ -80,6 +81,7 @@ body {
 	align-content: center;
 }
 
+
 .wrap > a {
 	width: 500px;
 	height: 65px;
@@ -98,6 +100,7 @@ body {
 	font-weight: 600;
 	color: rgb(240, 227, 255);
 
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -106,8 +109,9 @@ body {
 	text-decoration: none;
 }
 
+
 .wrap > a:hover {
-	background-color: rgba(77, 42, 255, 0.8);
+	background-color: rgba(78, 42, 255, 0.307);
   opacity: 1;
 	transition: 0.25s;
 	transform: scale(0.999);
