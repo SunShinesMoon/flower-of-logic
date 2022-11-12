@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.wrap {
+  overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+  position: relative;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+  background-position: center;
+	background-size: cover;
+
+  background: linear-gradient(270deg, #0f0a46, #16005e, #010a15);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+.wrap h1 {
+	font-family: "libre franklin";
+	font-weight: bold;
+	font-size: 28px;
+  transform:translateX(0%) translateY(0%);
+  backdrop-filter: blur(px);
+	margin: 15px auto 0px auto;
+	letter-spacing: 1px;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  background-image:linear-gradient(45deg, #7e27ff 0%,#6570FB 35%,#B876FD 66%,#00c9d3 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 2.5s linear infinite;background-size:200%;}
+  @-webkit-keyframes glow{0%{background-position:0% 43%;}50%{background-position:100% 58%;}
+  100%{background-position:0% 43%;}}@keyframes glow{0%{background-position:0% 43%;}
+  50%{background-position:100% 58%;}100%{background-position:0% 43%;}}
+
+
+
+.wrap p {
+	font-family: "libre franklin";
+	font-weight: bolder;
+	font-size: 15px;
+	color: #fff;
+	margin-top: 15px;
+	margin-bottom: 70px;
+	letter-spacing: 0px;
+	margin: 15px auto 15px auto;
+	align-content: center;
+}
+
+.wrap > a {
+	width: 500px;
+	height: 65px;
+
+	box-shadow: 0 8px 32px 0 rgba(58, 19, 104, 0.548);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border-radius: 10.2px;
+	border: 1.4px solid rgba(128, 77, 230, 0.54);
+	margin-bottom: 8px;
+  margin-top: 10px;
+
+	font-family: "sf pro";
+	font-size: 16px;
+  letter-spacing: 0px;
+	font-weight: 600;
+	color: rgb(240, 227, 255);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-decoration: none;
+}
+
+.wrap > a:hover {
+	background-color: rgba(77, 42, 255, 0.8);
+  opacity: 1;
+	transition: 0.25s;
+	transform: scale(0.999);
+  border: 1px solid #6570FB;
+  box-shadow: 0 5px 25px 0 rgba(212, 172, 255, 0.4);
+  
+}
+
+
+.wrap > a:not(:hover) {
+  background-color: transparent;
+	transition: 0.25s;
+	transform: scale(0.98);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+  border: 1px solid rgba(236, 94, 255, 0.764);
+  box-shadow: 0 8px 32px 0 rgba(58, 19, 104, 0.548);
+
+  background-image:linear-gradient(45deg,#c6b0ff 66%,#00c9d3 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 4.5s linear infinite;background-size:200%;}
+  @-webkit-keyframes glow{0%{background-position:0% 43%;}50%{background-position:100% 58%;}
+  100%{background-position:0% 43%;}}@keyframes glow{0%{background-position:0% 43%;}
+  50%{background-position:100% 58%;}100%{background-position:0% 43%;}}
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile {
+	width: 60px;
+	height: 60px;
+
+	background-color: transparent;
+	border-radius: 100%;
+	border: 0px solid white;
+
+	background-image: url("Flower-of-Logic_1.png");
+  mix-blend-mode: screen;
+
+
+  -moz-box-shadow: 0 0 5px #7e27ff;
+  -webkit-box-shadow: 0 0 5px #7e27ff;
+  
+  background-position: center;
+	background-size: cover;
+	margin-top: 90px;
+
+ /* 
+  box-shadow: 0 8px 20px 0 rgba(121, 37, 216, 0.778);
+  backdrop-filter: blur(11px);
+  -webkit-border-image :transparent;
+  */
+
+  animation-name: rotation;
+  animation-duration: 4.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s; 
+}
+
+
+.wrap footer {
+  width: auto;
+	height: auto;
+
+	font-family: "libre franklin";
+	font-weight: bold;
+	font-size: 13px;
+
+  transform:translateX(0%) translateY(0%);
+  backdrop-filter: blur(px);
+	margin: 45px auto 0px auto;
+	letter-spacing: -0.16px;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: #6570FB;
+  border-width: 1.1px;/*상하좌우*/
+  padding: 0.42em 1.4em 0.42em 1.4em;
+  background-image:linear-gradient(90deg, #7e27ff 0%,#6570FB 35%,#B876FD 66%,#00c9d3 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 2.5s linear infinite;background-size:200%;}
+  @-webkit-keyframes glow{0%{background-position:0% 43%;}50%{background-position:100% 58%;}
+  100%{background-position:0% 43%;}}@keyframes glow{0%{background-position:0% 43%;}
+  50%{background-position:100% 58%;}100%{background-position:0% 43%;}}
+
+ 
